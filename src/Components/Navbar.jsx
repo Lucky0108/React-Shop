@@ -37,13 +37,13 @@ function Navbar() {
                     Lakshay
                     </NavLink>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <NavLink className="dropdown-item" activeClassName="activeDropdown" exact to="/profile"><i className="mr-2 fa fa-user-circle-o" aria-hidden="true"></i> My Profile</NavLink>
+                    <NavLink className="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" activeClassName="activeDropdown" exact to="/profile"><i className="mr-2 fa fa-user-circle-o" aria-hidden="true"></i> My Profile</NavLink>
                     <div className="dropdown-divider"></div>
-                    <NavLink className="dropdown-item" activeClassName="activeDropdown" exact to="/orders"><i className="mr-2 fa fa-first-order" aria-hidden="true"></i> Orders</NavLink>
+                    <NavLink className="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" activeClassName="activeDropdown" exact to="/orders"><i className="mr-2 fa fa-first-order" aria-hidden="true"></i> Orders</NavLink>
                     <div className="dropdown-divider"></div>
-                    <NavLink className="dropdown-item" activeClassName="activeDropdown" exact to="/wishlist"><i className="mr-2 fa fa-heart" aria-hidden="true"></i> Wishlist</NavLink>
+                    <NavLink className="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" activeClassName="activeDropdown" exact to="/wishlist"><i className="mr-2 fa fa-heart" aria-hidden="true"></i> Wishlist</NavLink>
                     <div className="dropdown-divider"></div>
-                    <NavLink className="dropdown-item" activeClassName="activeDropdown" exact to="#"><i className="mr-2 fa fa-sign-out" aria-hidden="true"></i> Logout</NavLink>
+                    <NavLink className="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" activeClassName="activeDropdown" exact to="#"><i className="mr-2 fa fa-sign-out" aria-hidden="true"></i> Logout</NavLink>
                     </div>
                 </li>
 
@@ -52,9 +52,9 @@ function Navbar() {
                     More
                     </NavLink>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <NavLink className="dropdown-item" activeClassName="activeDropdown" exact to="/support"><i className="mr-2 fa fa-question-circle" aria-hidden="true"></i> Contact Us</NavLink>
+                    <NavLink className="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" activeClassName="activeDropdown" exact to="/support"><i className="mr-2 fa fa-question-circle" aria-hidden="true"></i> Contact Us</NavLink>
                     <div className="dropdown-divider"></div>
-                    <NavLink className="dropdown-item" activeClassName="activeDropdown" exact to="/feedback"><i className="mr-2 fa fa-comments" aria-hidden="true"></i> Drop Feedback</NavLink>
+                    <NavLink className="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" activeClassName="activeDropdown" exact to="/feedback"><i className="mr-2 fa fa-comments" aria-hidden="true"></i> Drop Feedback</NavLink>
                     </div>
                 </li>
 
