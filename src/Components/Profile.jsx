@@ -40,7 +40,7 @@ function Profile() {
                         <a href="/">Change Password</a>
                         </div>
                         <div>
-                            <input type="text" placeholder="Email Address" id="email" value="raolakshayyadav02@gmail.com" className="form-control col-md-4 disableInput mt-2" disabled />
+                            <input type="text" placeholder="Email Address" id="email" value="demo@gmail.com" className="form-control col-md-4 disableInput mt-2" disabled />
                         </div>
                         </div>
 
@@ -50,7 +50,7 @@ function Profile() {
                         <a href="/" className="mr-5">Edit</a>
                         </div>
                         <div>
-                            <input type="text" placeholder="Mobile Number" id="pNumber" value="+919891433344" className="form-control col-md-4 disableInput mt-2" disabled />
+                            <input type="text" placeholder="Mobile Number" id="pNumber" value="+91987456321" className="form-control col-md-4 disableInput mt-2" disabled />
                         </div>
                         </div>
 
