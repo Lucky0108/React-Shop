@@ -60,7 +60,7 @@ function Navbar() {
 
                 <li className="nav-item cartPart">
                 <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <NavLink className="nav-link" to="/cart">Cart<span className="sr-only">(current)</span></NavLink>
+                    <NavLink data-toggle="collapse" data-target=".navbar-collapse.show" className="nav-link" to="/cart">Cart<span className="sr-only">(current)</span></NavLink>
                 </li>
 
                 </ul>
