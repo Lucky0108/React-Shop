@@ -31,7 +31,7 @@ body {
 .searchBar > input {
   flex: 1;
   border: none;
-  padding: 3px 5px 3px 10px;
+  padding: 5px 5px 3px 10px;
 }
 
 .searchIcon {
@@ -40,6 +40,11 @@ body {
   padding-right: 1px !important;
   width: 30px;
   border-left: 1px darkgray solid;
+}
+
+.activeDropdown {
+  background-color: #2874f0;
+  color: white !important;
 }
 
 /* Font Awesome Icon Colors */
