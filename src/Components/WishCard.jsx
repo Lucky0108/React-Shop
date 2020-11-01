@@ -11,9 +11,9 @@ function WishItems(props) {
                         <a href="/" className="card-text wishText">
                             {props.title} 
                         </a>    
-                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <i className="fa fa-trash" aria-hidden="true"></i>
                         </div>
-                        <p className="starP px-1">{props.ratings} <i class="fa fa-star" style={{color:"white"}} aria-hidden="true"></i></p>
+                        <p className="starP px-1">{props.ratings} <i className="fa fa-star" style={{color:"white"}} aria-hidden="true"></i></p>
                         <h4 className="font-weight-bold">₹{props.price}</h4>
                     </div>
                 </div>
