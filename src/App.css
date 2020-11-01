@@ -1,38 +1,301 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Roboto', sans-serif !important;
+  line-height: 1.4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header {
+  background-color: #2874f0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-link, .navbar-brand {
+  color: snow !important;
+  letter-spacing: .4px;
+}
+
+.searchBar {
   display: flex;
-  flex-direction: column;
+  width: 40%;
   align-items: center;
+  border: 1px white solid;
+  border-radius: 0.25rem;
+}
+
+.searchBar > input {
+  flex: 1;
+  border: none;
+  padding: 3px 5px 3px 10px;
+}
+
+.searchIcon {
+  background-color: white;
+  padding: 7px;
+  padding-right: 1px !important;
+  width: 30px;
+  border-left: 1px darkgray solid;
+}
+
+/* Font Awesome Icon Colors */
+.fa {
+  color: #2874f0;
+}
+
+.searchIcon:hover {
+  cursor: pointer;
+  color: darkgrey ;
+}
+
+/* CartIcon and Cart in Navbar */
+.cartPart {
+  display: flex;
+  align-items: center;
+}
+
+.fa-shopping-cart {
+  color: snow;
+}
+
+/* Zooming In the dropdown items */
+.dropdown-item {
+  font-size: 14px;
+  transition: transform .2s;
+}
+
+.dropdown-item:hover {
+  transform: scale(1.1)
+}
+
+.center {
+  height: 90vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+}
+
+.card{
+  margin: 2rem;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+}
+
+/* Profile Icon Color */
+.profUser{
+  align-items: center;
+  color: #FFE11B;
+}
+
+.fullProfile,.fullWishlist,.fullOrder,.fullSupport,.fullFeedback,.fullCart {
+  display: flex;
+  background-color: #F1F3F6;
+}
+
+.fullSupport,.fullFeedback {
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+}
+
+.fullOrder {
+  padding-left: 50px;
+  flex-direction: column;
+}
+
+.fullCart {
+  justify-content: center;
+  height: 92vh;
+}
+
+.disableInput {
+  background-color: #fff !important;
+  color: gray !important;
+}
+
+.genderSpan{
+  color: gray;
+}
+
+.disableInput:hover,.genderLabel:hover{
+  cursor: not-allowed;
+}
+
+.emailEdit {
+  margin-right: 3rem;
+}
+
+/* Hide Number Button Arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.faqDiv{
+  font-size: 14px;
+  margin-left: 3rem;
+}
+
+.starP {
+  background-color: #388E3C;
+  width: max-content;
   color: white;
+  border-radius: 2px;
+  font-size: 13px;
 }
 
-.App-link {
-  color: #61dafb;
+.wishText {
+  color: black !important;
+  text-decoration: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.wishText:hover {
+  color: #2874f0 !important;
+}
+
+.fa-trash:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.cardContent {
+  margin-left: 1.5rem;
+}
+
+.orderCard:hover {
+  cursor: pointer;
+}
+
+.orderDetail {
+  margin-left: 1rem;
+}
+
+.orderName {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.orderColor {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #878787;
+}
+
+.successSpan,.failedSpan {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+  
+}
+
+.successSpan {
+  border: 2px solid rgb(38, 165, 65);
+  background-color: rgb(38, 165, 65);
+}
+
+.failedSpan {
+    background-color: rgb(255, 97, 97);
+    border: 2px solid rgb(255, 97, 97);
+}
+
+@media (max-width: 721px) {
+
+  body{
+    font-size: 84% !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .fa-shopping-cart {
+    margin-right: 5px;
   }
+
+  .faqDiv{
+    padding-right: 15px ;
+  }
+
+  .emailEdit {
+    margin-right: .5rem ;
+  }
+
+}
+
+@media (max-width:990px) {
+
+  .navbar {
+    display: block !important;
+  }
+
+  .navLeft {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .searchBar {
+    display: none;
+   margin-top: 10px;
+    width: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .HelloCard {
+    display: none !important;
+  }
+
+  .wishDiv {
+      flex-direction: column;
+  }
+
+  .wishDiv img {
+    align-self: center;
+    width: max-content;
+    height: max-content;
+    margin-bottom: 20px;
+    margin-left: 0px !important ;
+  }
+
+  .wishText {
+    margin-bottom: 10px;
+    margin-right: 8px;
+  }
+
+  .fa-trash{
+    margin-top: 5px;
+  }
+
+  .cardContent {
+   padding-left: 0px;
+   margin-left: 0px !important;
+  }
+
+  .orderCard{
+    align-self: center;
+    flex-direction: column;
+  }
+
+  .orderDetail {
+    margin-left: 0rem;
+  }
+
+  .fullOrder {
+    padding-left: 0px;
+  }
+
+  .fullOrder > .card {
+    margin: 0px 2rem 10px 2rem !important;
+  }
+
 }
