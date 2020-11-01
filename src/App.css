@@ -43,8 +43,7 @@ body {
 }
 
 .activeDropdown {
-  background-color: #2874f0;
-  color: black !important;
+  background-color: white;
 }
 
 /* Font Awesome Icon Colors */
